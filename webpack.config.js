@@ -62,5 +62,9 @@ module.exports = {
         new webpack.ProvidePlugin({
             "React": "react" //untuk menandai bahwa ini file React
         })
-    ]
+    ],
+    performance: {
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    }
 };
